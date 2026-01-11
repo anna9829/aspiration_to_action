@@ -409,7 +409,7 @@ self_m3_control.results <- sem(self_m3_control,
                                sampling.weights = "weight"  # Adding sampling weights
 )
 
-summary(self_m3_control.results, fit.measures=TRUE)
+lavaan::summary(self_m3_control.results, fit.measures=TRUE)
 
 
 
@@ -583,7 +583,7 @@ self_m3_control_group.results <- sem(self_m3_control_group,
                                      group = "highedu"             # Group indicator
 )
 
-summary(self_m3_control_group.results, fit.measures=TRUE)
+lavaan::summary(self_m3_control_group.results, fit.measures=TRUE)
 
 
 ## Wald tests for coefficient comparison ##
